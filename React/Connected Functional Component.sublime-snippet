@@ -1,0 +1,39 @@
+<snippet>
+    <content><![CDATA[
+const React                = require('react');
+const Radium               = require('radium');
+const Immutable            = require('immutable');
+const {connect}            = require('react-redux');
+const {bindActionCreators} = require('redux');
+
+
+
+const ${1:Component} = ({
+
+}) => {
+    return (
+    	<div>
+        	${1:Component}
+        </div>
+    );
+};
+
+
+function mapStateToProps(state, ownProps){
+    return {
+        /* return mapped state. */
+    }
+}
+
+function mapDispatchToProps(dispatch, ownProps){
+	return {
+		/* return bound action creators */
+	}
+}
+
+module.exports = connect(mapStateToProps, mapDispatchToProps)(Radium(${1:Component}));
+
+
+]]></content>
+<tabTrigger>rcfc</tabTrigger>
+</snippet>

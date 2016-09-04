@@ -1,26 +1,25 @@
 <snippet>
     <content><![CDATA[
-import {
-    ${2:Action}
-} from '${3:path}';
 
-const defaultState = {
-    ${4:prop},
-};
+const createReducer = require('redux-immutablejs').createReducer;
+const Immutable     = require('immutable');
 
-const ${1:Reducer} = (state = defaultState, action = {}) => {
-    switch (action.type) {
-        case ${5:type}:
-            return {
-                ...state,
-            };
 
-        default:
-            return state;
+const initialState = Immutable.fromJS({})
+
+
+
+
+const ${1:Reducer} = createReducer(initialState, {
+    ['${2:type}']: (state, action) => {
+        return state;
     }
-};
+});
 
-export default ${1:Reducer};
+
+module.exports = ${1:Reducer}
+
+
 
 ]]></content>
 <tabTrigger>rrr</tabTrigger>

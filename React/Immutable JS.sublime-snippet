@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[
+const Immutable = require('immutable');
+]]></content>
+<tabTrigger>imutable</tabTrigger>
+</snippet>

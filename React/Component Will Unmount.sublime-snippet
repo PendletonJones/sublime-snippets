@@ -1,8 +1,0 @@
-<snippet>
-    <content><![CDATA[
-componentWillUnmount() {
-    ${1}
-}
-]]></content>
-<tabTrigger>rcwum</tabTrigger>
-</snippet>
